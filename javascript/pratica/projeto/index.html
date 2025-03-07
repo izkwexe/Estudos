@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaque</title>
+    <title>Conversor de Dólar</title>
 </head>
 <body>
-    <script src="script.js"></script>
+    <h1>Forbs</h1>
+    
+    <input id="salario" type="number" placeholder="Digite seu salário">
+    <button onclick="Forbes()">Converter</button>
+
+    <script>
+    function Forbes() {
+        const valoSalario = document.getElementById("salario").value
+
+        if (valoSalario >= 5)
+            alert(`Você rico 🤑`);
+        else if (valoSalario < 5)
+            alert(`Tá pobrinho ainda`);
+        else {
+            alert(`Erro`);
+        }
+    }
+    </script>
 </body>
 </html>
