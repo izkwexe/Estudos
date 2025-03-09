@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Dólar</title>
+    <title>Gerador de Ficha</title>
 </head>
 <body>
-    <h1>Forbs</h1>
-    
-    <input id="salario" type="number" placeholder="Digite seu salário">
-    <button onclick="Forbes()">Converter</button>
+    <h1>Gerador de Ficha</h1>
 
-    <script>
-    function Forbes() {
-        const valoSalario = document.getElementById("salario").value
+    <input id="valor01" type="text" placeholder="Nome">
+    <input id="valor02" type="text" placeholder="Sobrenome">
+    <input id="valor03" type="text" placeholder="Último sobrenome">
+   <!-- <input id="valor04" type="number" placeholder="Ano de nascimento">
+    <input id="valor05" type="text" placeholder="Profissão">-->
 
-        if (valoSalario >= 5)
-            alert(`Você rico 🤑`);
-        else if (valoSalario < 5)
-            alert(`Tá pobrinho ainda`);
-        else {
-            alert(`Erro`);
-        }
-    }
+    <button onclick="Formulario()">Gerar Ficha</button>
+
+    <h2 id="resultado"></h2> <!-- Exibição do resultado -->
+
+    <script src="IF_ELSE.js">
     </script>
 </body>
 </html>
